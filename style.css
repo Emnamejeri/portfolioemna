@@ -7,40 +7,11 @@ html {
   box-sizing: inherit;
 }
 
-a:link {
-  color: white;
-  text-decoration: none;
-}
-a:hover {
-  color: #ff007b;
-  text-decoration: none;
-}
-
-body {
-  position: relative;
-  background-color: black;
-}
-
-nav {
-  position: sticky;
-  top: 0px;
-  z-index: 28;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  background-color: black;
-}
-
-.navbarelements {
-  font-family: "Dosis", sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  margin-left: 3rem;
-}
-
 #aboutme {
   min-height: 520px;
   position: relative;
+  padding: 2rem;
+  height: 85vh;
 }
 
 .introductiontext {
@@ -48,133 +19,137 @@ nav {
   font-family: "Dosis", sans-serif;
   text-align: left;
   position: absolute;
-  color: white;
+  color: #333;
   top: 60%;
   left: 50%;
-  transform: translate(-10%, -50%);
+  transform: translate(-20%, -50%);
+  padding-bottom: 4rem;
+  width: 80%;
+  max-width: 800px;
 }
 
 b {
   color: #ff007b;
 }
+.btn.btn-primary {
+  background-color: #ff007b !important;
+  border-color: #ff007b !important;
+  color: #ffffff !important;
+  margin-right: 19px;
+}
 
-h3 {
-  color: #ff007b;
-  font-weight: bold;
-  font-family: "Dosis", "Gill Sans", "Gill Sans MT", Calibri;
+.btn.btn-primary:hover {
+  background-color: #ffffff !important;
+  color: #ff007b !important;
+}
+
+.btn.btn-light:hover {
+  background-color: #ff007b !important;
+  color: #ffffff !important;
 }
 
 #myWork {
   display: grid;
-  gap: 0.5rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0rem;
+  grid-template-columns: 1fr 1fr;
   min-height: 450px;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center; /* Corrected comment */
 }
 
-.column {
-  justify-self: center;
-  text-align: center;
-  margin-top: 5rem;
-  border: 5px white solid;
-  border-radius: 8%;
-  padding-bottom: 5px;
+.card {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 30px;
+  height: 520px;
+  padding: 0;
+  width: 69%;
+  border-radius: 5%;
+}
+.card-img-top {
+  height: 300px;
+  width: 600px;
+  object-fit: cover;
 }
 
 p {
-  color: white;
+  color: #333;
   font-weight: bold;
   font-size: 1.2rem;
   font-family: "Dosis", sans-serif;
   margin-bottom: 1.7rem;
 }
 
-button {
-  background-color: white;
-  transition-duration: 0.4s;
-  font-family: "Dosis", sans-serif;
-  border: none;
-  border-radius: 8%;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 0.4rem;
-  text-align: center;
-  margin-left: 1rem;
-  margin-bottom: 2rem;
-  display: inline-block;
-}
-button:hover {
-  background-color: #f7c2f9;
-}
-#btn {
-  border-radius: 8%;
-  border: 2px solid #f8f4f4;
-  background-color: black;
-  text-align: center;
-  font-size: 1.3rem;
-  padding: 0.3rem;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-#Contact {
-  min-height: 420px;
-  border: white 4px solid;
-  display: block;
-  align-items: center;
-}
-
-form {
-  list-style-type: none;
-  color: white;
-  font-family: "Dosis", sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  margin-top: 9rem;
-  padding-left: 3rem;
-}
-
-.btn-submit {
-  background-color: white;
-  transition-duration: 0.6s;
-  font-family: "Dosis", sans-serif;
-  border: none;
-  border-radius: 8%;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 1.3rem;
-  padding: 0.3rem;
-}
-li {
-  color: #ff007b;
-  font-weight: bold;
-  font-family: "Dosis", "Gill Sans", "Gill Sans MT", Calibri;
-  text-align: center;
-  font-size: 1.2rem;
-
-  margin-top: 6px;
-}
-
-.btn-submit {
-  background-color: #ff007b;
-  color: white;
-}
-.btn-submit:hover {
-  background-color: white;
-  color: #ff007b;
-}
 .fa-solid {
   color: #ff007b;
 }
-.fa-face-smile-wink {
-  color: #ff007b;
-  margin-left: 17px;
+
+.contact-form {
+  width: 80%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 2px #dcdcdc;
 }
+.contact-form label {
+  font-weight: bold;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+.contact-form textarea {
+  height: 100px;
+}
+
 footer {
+  background-color: #f5f5f5;
+  padding: 10px;
   text-align: center;
-  color: white;
-  font-size: 1.5rem;
-  text-align: end;
-  margin-right: 2rem;
 }
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  font-size: 16px;
+  color: #333;
+}
+
+#social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+#social-icons a {
+  color: #333;
+  font-size: 24px;
+}
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .introductiontext {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .introductiontext {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
