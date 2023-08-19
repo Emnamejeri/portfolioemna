@@ -10,172 +10,275 @@
       src="https://kit.fontawesome.com/07cecfdf00.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <nav>
-      <a href="#aboutme" class="navbarelements">About me</a>
-      <a href="#myWork" class="navbarelements">My projects</a>
-      <a href="#Contact" class="navbarelements">Contact</a>
-      <a
-        href="EMNA Mejeri Resume 2023.pdf"
-        class="navbarelements"
-        target="_blank"
-        >Resume</a
-      >
-      <a
-        href="https://github.com/Emnamejeri"
-        target="_blank"
-        class="navbarelements"
-      >
-        <i class="fa-brands fa-github-alt"></i>
-      </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-code"></i></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#aboutme"
+                >About me</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#myWork">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="Emna FE Engineer Resume.pdf"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/Emnamejeri"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github-alt"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <div class="maincontent">
       <div id="aboutme">
         <p class="introductiontext">
-          I am a Junior UI & Front-End Developer who enjoys tackling complex
-          coding challenges to continuously grow my programming skills. <br />
-          I am passionate about creating aesthetically responsive web
-          applications that offer the best user experience.<br />
-          My coding knowledge includes <b>HTML5</b>, <b>CSS</b>,
-          <b>JavaScript</b> and <b>REACT</b>.
+          I am a Front-End Developer who thrives on solving complex coding
+          challenges and building innovative web solutions. With a dedication to
+          continuous learning and improvement, I craft aesthetically appealing
+          and highly functional applications that provide an optimal user
+          experience. My technical proficiency in <b>HTML5</b>, <b>CSS</b>,
+          <b>Bootstratp</b>, <b>JavaScript</b> and <b>REACT</b>, combined with a
+          keen eye for design, positions me to contribute effectively to dynamic
+          and collaborative development teams.
         </p>
       </div>
 
       <div id="myWork">
-        <div class="column">
-          <div class="project">
-            <h3>The Calculator</h3>
-            <p>
-              My very first coding challenge to practice my JS skills and
-              learnings.
+        <div class="card">
+          <img
+            src="./calculator.jpg"
+            class="card-img-top"
+            alt="scientific calculator"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Scientific Calculator (JavaScript, Bootstrap)
+            </h5>
+            <p class="card-text">
+              Designed and implemented a scientific calculator using JavaScript
+              for intuitive user experience.
             </p>
-            <br />
-            <button>HTML</button> <button>CSS</button> <button>JS</button>
-            <br />
-            <button id="btn">
+            <div class="d-flex justify-content-center">
               <a
                 href="https://emnamejeri.github.io/TheCalculator/"
                 target="_blank"
+                class="btn btn-primary"
+                >See the website</a
               >
-                See the website</a
-              >
-            </button>
-            <button id="btn">
               <a
                 href="https://github.com/Emnamejeri/TheCalculator"
                 target="_blank"
+                class="btn btn-light"
+                >See The Code</a
               >
-                See the code</a
-              >
-            </button>
+            </div>
           </div>
         </div>
 
-        <div class="column">
-          <div class="project">
-            <h3>Advice Generator App</h3>
-            <p>
-              A fun and interactive application that generates tips and advice
-              upon click.
+        <div class="card">
+          <img src="./smiley.jpg" class="card-img-top" alt="smiley face icon" />
+          <div class="card-body">
+            <h5 class="card-title">Advice Generator App (API, JavaScript)</h5>
+            <p class="card-text">
+              An engaging and interactive application that provides tips and
+              advice with a single click.
             </p>
-            <br />
-            <button>HTML</button> <button>CSS</button> <button>JS</button>
-            <button>API</button><br />
-            <button id="btn">
+            <div class="d-flex justify-content-center">
               <a
                 href="https://emnamejeri.github.io/AdviceGenerator/"
                 target="_blank"
+                class="btn btn-primary"
+                >See The Website</a
               >
-                See the website</a
-              >
-            </button>
-            <button id="btn">
               <a
                 href="https://github.com/Emnamejeri/AdviceGenerator"
                 target="_blank"
+                class="btn btn-light"
+                >See The Code</a
               >
-                See the code</a
-              >
-            </button>
+            </div>
           </div>
         </div>
-        <div class="column">
-          <div class="project">
-            <h3>DigiEmploy</h3>
-            <p>
-              A Website for the latest Job posts in The IT world. Built using
-              MUI Library. Built using MUI Library.
+        <div class="card">
+          <img
+            src="./picturebaby.jpeg"
+            class="card-img-top"
+            alt="smiley baby"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Cuddelz (REACT, JavaScript, MUI)</h5>
+            <p class="card-text">
+              Online store offering extensive range of children's toys, clothes,
+              accessories.
             </p>
-            <br />
-            <button>HTML</button> <button>CSS</button> <button>JS</button>
-            <button>REACT</button><br />
-            <button id="btn">
-              <a href="https://emnamejeri.github.io/digiemploy/" target="_blank"> See the website</a> 
-            </button>
-            <button id="btn">
-              <a
-                href="https://github.com/Emnamejeri/DigiEmployIT"
-                target="_blank"
-              >
-                See the code</a
-              >
-            </button>
-          </div>
-        </div>
-        <div class="column">
-          <div class="project">
-            <h3>Cuddelz ( under construction)</h3>
-            <p>
-              A web page for an e-commerce website that sells children's
-              products. Built using MUI Library.
-            </p>
-            <br />
-            <button>HTML</button> <button>CSS</button> <button>JS</button>
-            <button>REACT</button><br />
-            <button id="btn">
-              <a href="#" target="_blank"> See the website</a>
-            </button>
-            <button id="btn">
+            <div class="d-flex justify-content-center">
               <a
                 href="https://github.com/Emnamejeri/ChildrenCuddelz"
                 target="_blank"
+                class="btn btn-primary"
+                >Under Construction ⚒
+              </a>
+              <a
+                href="https://github.com/Emnamejeri/ChildrenCuddelz"
+                target="_blank"
+                class="btn btn-light"
+                >See The Code</a
               >
-                See the code</a
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./digiemploy.jpg" class="card-img-top" alt="random tags" />
+          <div class="card-body">
+            <h5 class="card-title">
+              DigiEmploy Website (React, JavaScript, Material UI)
+            </h5>
+            <p class="card-text">
+              A website dedicated to featuring the latest job postings in the IT
+              world, constructed using the MUI Library.
+            </p>
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://emnamejeri.github.io/digiemploy/"
+                target="_blank"
+                class="btn btn-primary"
+                >See The Website</a
               >
-            </button>
+              <a
+                href="https://github.com/Emnamejeri/DigiEmployIT"
+                target="_blank"
+                class="btn btn-light"
+                >See The Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./mybank.jpg" class="card-img-top" alt="finance desk" />
+          <div class="card-body">
+            <h5 class="card-title">
+              My-Banking Operations Console App (Python)
+            </h5>
+            <p class="card-text">
+              A Minimal Viable Product (MVP) for a mini-banking console
+              application using Python.
+            </p>
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://github.com/Emnamejeri/DigiEmployIT"
+                target="_blank"
+                class="btn btn-light"
+                >See The Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./abc.jpg" class="card-img-top" alt="alphabetic letters" />
+          <div class="card-body">
+            <h5 class="card-title">SpeedTyper (JavaScript, Bootstrap)</h5>
+            <p class="card-text">
+              An app to boost your typing skills with engaging challenges, built
+              in JavaScript
+            </p>
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://emnamejeri.github.io/speedtyper/"
+                target="_blank"
+                class="btn btn-primary"
+                >See The Website</a
+              >
+              <a
+                href="https://github.com/Emnamejeri/speedtyper"
+                target="_blank"
+                class="btn btn-light"
+                >See The Code</a
+              >
+            </div>
           </div>
         </div>
       </div>
 
-      <form
-        id="Contact"
-        action="https://formsubmit.co/emnamejeri23@gmail.com"
-        method="POST"
-      >
-        <h3>Don't Hesitate to Contact Me</h3>
-        <li>
-          <label for="name" class="display-form">Name* </label> <br />
-          <input type="text" name="name" />
-        </li>
-        <li>
-          <label for="email" class="display-form">Email* </label> <br />
-          <input type="email" name="email" />
-        </li>
+      <div class="contact-form">
+        <h5 class="card-title">
+          Let's Get In Touch <br />
+          <br /><br />
+        </h5>
+        <form
+          action="https://formsubmit.co/emnamejeri23@gmail.com"
+          method="post"
+        >
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
 
-        <li>
-          <label for="Message" class="display-form">Message* </label> <br />
-          <textarea cols="46" rows="5" name="Message"></textarea>
-        </li>
-        <li>
-          <input class="btn-submit" type="submit" value="Submit" />
-        </li>
-      </form>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-warning">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <script src="main.js"></script>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2023 Portfolio -- All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Emna</p>
+        <div id="social-icons">
+          <a href="https://www.facebook.com/yourpage" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.twitter.com/yourpage" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/yourpage" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   </body>
-
-  <footer>Made with <i class="fa-solid fa-heart"></i> by Emna</footer>
 </html>
