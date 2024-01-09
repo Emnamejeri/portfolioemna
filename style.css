@@ -55,7 +55,7 @@ b {
   min-height: 450px;
   margin: 0 auto;
   align-items: center;
-  justify-items: center; /* Corrected comment */
+  justify-items: center;
 }
 
 .card {
@@ -139,17 +139,96 @@ footer {
 
 /* For tablets and smaller laptops */
 @media (max-width: 1024px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .nav-link {
+    padding: 0.5rem;
+  }
+  .navbar-toggler {
+    margin: 0.5rem;
+  }
+
+  #aboutme {
+    min-height: auto;
+    height: auto;
+    padding: 6rem 1rem 2rem;
+  }
   .introductiontext {
     font-size: 1.5rem;
+    text-align: center;
+    position: static;
+    transform: none;
+    padding: 1rem;
     width: 90%;
+    max-width: 800px;
+  }
+
+  #myWork {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    width: 45%;
+  }
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-form {
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 2px #dcdcdc;
   }
 }
 
 /* For mobile devices */
 @media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .nav-link {
+    padding: 0.5rem;
+  }
+  .navbar-toggler {
+    margin: 0.5rem;
+  }
+  #aboutme {
+    min-height: auto;
+    height: auto;
+    padding: 8rem 1rem 2rem;
+  }
   .introductiontext {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    position: static;
+    transform: none;
+    padding: 1rem;
+  }
+  #myWork {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .card-img-top {
     width: 100%;
+    height: auto;
+  }
+  .contact-form {
+    width: 100%;
+    max-width: none;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  #social-icons {
+    margin-top: 10px;
   }
 }
-
